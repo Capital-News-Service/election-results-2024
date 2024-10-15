@@ -1,0 +1,26 @@
+on:
+  schedule:
+    - cron: "0 8 * * *" # 8 a.m. every day UTC
+  push:
+    branches: main
+
+name: Scrape R test
+
+jobs:
+  render:
+    name: Scrape R test
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@v2
+      - name: Install dependencies
+        run: Rscript -e 'install.packages(c("tidyverse","rvest","dplyr","lubridate"))'
+      - name: Scrape the data
+        run: Rscript election_scraper_2024.R
+      - name: Add and commit
+        id: add_commit
+        uses: EndBug/add-and-commit@v8
+        with:
+          committer_name: Automated
+          committer_email: actions@users.noreply.github.com
+          message: "Latest data"  
