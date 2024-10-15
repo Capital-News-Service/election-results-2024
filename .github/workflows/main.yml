@@ -4,7 +4,7 @@ on:
   push:
     branches: main
 
-name: Scrape R test
+name: Scrape R
 
 jobs:
   render:
