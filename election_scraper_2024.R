@@ -33,7 +33,7 @@ for (row_number in 1:nrow(scraper)) {
   
   # Remove the commas from the Total column
   table$Total <- gsub(',', '', table$Total)
-  
+
   # Write the CSV
   write_csv(table, each_row$file_name)
 }
