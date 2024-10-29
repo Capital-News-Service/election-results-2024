@@ -35,7 +35,16 @@ for (row_number in 1:nrow(scraper)) {
   
   # Remove totals row 
   table <- table[-nrow(table), ]
-  
+
+  # Fiddle with Senate so it doesn't name write-in candidates
+  if (each_row$file_name == "senate.csv") { 
+          table <- table %>% mutate(Total = as.numeric(table$Total))
+          write_in_votes <- sum(table$Total[-(1:3)])
+          wrow <- data.frame(c1 = "Other Write-Ins", c2 = NA, c3 = NA, c4 = NA, c5 = NA, c6 = NA, c7 = write_in_votes, c8 = NA)
+          colnames(wrow) <- colnames(table)
+          table <- table[1:3, ] %>% bind_rows(wrow)
+  }
+    
   # Write the CSV
   write_csv(table, each_row$file_name)
 }
