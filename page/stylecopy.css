@@ -1,0 +1,254 @@
+/* STRUCTURAL ELEMENTS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Serif Pro', serif;
+  font-size:1em;
+    text-align: center;
+}
+
+
+.container {
+  text-align:center;
+}
+
+.ballot{
+  text-align: left;
+  font-size:.85em;
+    color: #1979b9;
+}
+
+
+
+.accordion-header {
+  font-family: 'poppins', sans-serif;
+  font-size:2em;
+   
+}
+
+.accordion-button:not(.collapsed) {
+        background-color: #1979b9;
+    color:#fff;
+}
+
+.accordion-button {
+      outline: none;
+box-shadow: none;
+font-size:.75em;
+padding:30px;
+font-weight:700;
+}
+
+.accordion-body {
+  font-size:1.2em;
+  text-align: left;
+    
+}
+.accordian-item {
+    background-color:#1979b9;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.hero-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.toc-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width:200px;
+  margin:10px;
+  padding:0px;
+}
+
+.toc-text{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-size:.85em;
+  color:#000;
+  width:100%;
+  min-height:50px;
+  opacity:.7;
+  background-color: #fff;
+  padding:5px;
+}
+
+.embed-container {
+  width:100%;
+  padding: 25px;
+}
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.footer {
+  background: #000;
+  height:100px;
+  min-height: 100px;
+  padding-top:25px;
+  margin-top:100px;
+}
+
+
+/* Nav Bar styles */
+
+#nav-logo {
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+}
+
+#logo {
+  width:250px;
+}
+
+
+/* LINK STYLES */
+
+a:link {
+  color:#1979b9;
+    text-decoration:none;
+      font-weight: bold; 
+}
+
+a:hover {
+  color: #1979b9;
+  text-decoration:underline;
+}
+
+a:visited {
+  color:#1979b9;
+  text-decoration:none;
+    font-weight: bold;
+}
+
+a:active {
+  color:#1979b9;
+  text-decoration:none;
+    font-weight: bold; 
+}
+
+a:link.toc-link {color: #000;}
+
+a:visited.toc-link {color:#000;}
+
+a.ballot:visited {
+  text-align: left;
+  font-size:.85em;
+    color: #1979b9;
+}
+
+
+/* IMAGES */
+
+.stack-image {
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  padding-top:30px;
+}
+
+
+
+/* TYPOGRAPHY */
+
+p {
+  text-align: left;
+}
+
+
+.hed {
+  font-size:4em;
+  font-family: 'Poppins', sans-serif;
+    color: #1979b9;
+    font-weight: bold;
+    margin-top:-40px;    
+}
+
+.subhed {
+  font-size:1.25em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform:uppercase; 
+  margin-top:40px;  
+  color:#4a4a4a;  
+  text-align: center;
+   
+}
+
+
+.chatter{
+  font-size: 1.5em;
+  margin:0 auto;
+  width:80%;
+  margin:0 auto;
+
+
+}
+
+h2{
+     font-size: 1.5em;
+ 
+}
+p{
+  text-align:left;
+  line-height:180%;
+  font-family: 'Source Serif Pro', serif;
+  font-size:1em;
+}
+
+
+.byline {
+  font-size:1em;
+  text-transform:uppercase;
+  margin-top:-10px;
+  font-family: 'Poppins', sans-serif;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.caption {
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  padding-bottom:30px;
+  font-family: 'Poppins', sans-serif;
+  color:#999;
+    text-align: center;
+}
+
+.footer p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:550px) {
+  p {
+    padding-left:20px;
+    padding-right:10px;
+  }
+
+
+  .hed {
+    font-size:2em;
+  }
+
+
+}
+
