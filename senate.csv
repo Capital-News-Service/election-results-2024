@@ -1,10 +1,5 @@
 Name,Party,Early Voting,Election Day,Mail-In Ballot,Provisional,Total,Percentage
-Angela Alsobrooks,Democratic,NR,NR,NR,NR,NR,NR
-Larry Hogan,Republican,NR,NR,NR,NR,NR,NR
-Mike Scott,Libertarian,NR,NR,NR,NR,NR,NR
-Patrick J. Burke (Write In),Other Candidates,NR,NR,NR,NR,NR,NR
-Billy Bridges (Write In),Unaffiliated,NR,NR,NR,NR,NR,NR
-Irwin William Gibbs (Write In),Unaffiliated,NR,NR,NR,NR,NR,NR
-Christy Renee Helmondollar (Write In),Unaffiliated,NR,NR,NR,NR,NR,NR
-Robin Rowe (Write In),Unaffiliated,NR,NR,NR,NR,NR,NR
-Other Write-Ins,,NR,NR,NR,NR,NR,NR
+Angela Alsobrooks,Democratic,NR,NR,NR,NR,NA,NR
+Larry Hogan,Republican,NR,NR,NR,NR,NA,NR
+Mike Scott,Libertarian,NR,NR,NR,NR,NA,NR
+Other Write-Ins,NA,NA,NA,NA,NA,NA,NA
