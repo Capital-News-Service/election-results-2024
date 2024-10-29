@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: Rscript -e 'install.packages(c("tidyverse","rvest","dplyr","lubridate"))'
       - name: Scrape the data
-        run: Rscript election_scraper_2024.R
+        run: Rscript updated_election_scraper_2024.R
       - name: Add and commit
         id: add_commit
         uses: EndBug/add-and-commit@v8
