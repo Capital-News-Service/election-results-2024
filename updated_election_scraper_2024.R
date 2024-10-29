@@ -43,7 +43,7 @@ for (row_number in 1:nrow(scraper)) {
           wrow <- data.frame(c1 = "Other Write-Ins", c2 = NA, c3 = NA, c4 = NA, c5 = NA, c6 = NA, c7 = write_in_votes, c8 = NA)
           colnames(wrow) <- colnames(table)
           table <- table[1:3, ] %>% bind_rows(wrow)
-  }
+  } 
     
   # Write the CSV
   write_csv(table, each_row$file_name)
