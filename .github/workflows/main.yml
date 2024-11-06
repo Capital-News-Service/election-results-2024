@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "*/10 * * * *" # every 10 minutes
+    - cron: "*/11 * * * *" # every 11 minutes
   push:
     branches: main
 
